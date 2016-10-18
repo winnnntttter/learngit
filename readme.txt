@@ -19,3 +19,6 @@ $git add提交
 $git status查看状态，提示将要修改包含的文件
 $git commit -m"修改说明"
 $git status查看状态，没有需要提交的更改，工作目录干净
+
+//Git is a distributed version control system.
+//Git is free software distributed under the GPL.
