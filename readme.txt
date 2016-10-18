@@ -22,3 +22,10 @@ $git status查看状态，没有需要提交的更改，工作目录干净
 
 //Git is a distributed version control system.
 //Git is free software distributed under the GPL.
+$git log查看历史记录
+$git log --pretty=oneline显示在一行,长串16进制数字是commit id（版本号）
+当前版本是HEAD,上一个是HEAD^,上上一个HEAD^^,往上100,HEAD~100.
+$git reset --hard HEAD^回到上一个
+$git reset --hard commit id (前几位即可)回到版本号（过去或未来）
+Git在内部有个指向当前版本的HEAD指针，当你回退版本的时候，Git仅仅是把HEAD指向改变，顺便把工作区的文件更新。
+$ git reflog 查看历史命令，查看commit id
