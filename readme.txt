@@ -9,3 +9,6 @@ $git init 初始化一个git仓库
 $git add readme.text添加文件到仓库
 $git commit -m"本次提交的说明"
 可以一次添加多个文件一次说明
+Git is a distributed version control system.
+Git is free software.
+$git add readme.txt
