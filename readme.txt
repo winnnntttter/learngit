@@ -32,3 +32,6 @@ $git reset --hard HEAD^回到上一个
 $git reset --hard commit id (前几位即可)回到版本号（过去或未来）
 Git在内部有个指向当前版本的HEAD指针，当你回退版本的时候，Git仅仅是把HEAD指向改变，顺便把工作区的文件更新。
 $ git reflog 查看历史命令，查看commit id
+
+
+learngit是工作区，.git是版本库，版本库下包含stage（暂存区）和自动创建的第一个分支master，以及指向master的指针HEAD。
