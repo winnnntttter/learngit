@@ -3,7 +3,7 @@
 //Git is free software.
 $mkdir learngit在当前目录创建一个文件夹learngit
 $cd learngit 进入learngit文件夹
-$pwd 显示当前文件夹quanlujing
+$pwd 显示当前文件夹全路径
 $git init 初始化一个git仓库
 在learn下创建readme.text
 $git add readme.text添加文件到仓库
