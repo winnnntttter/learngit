@@ -48,4 +48,9 @@ $ git reset HEAD readme.txt 把暂存区的文件放回到工作区（覆盖工�
 
 远程仓库 github充当git服务器 本地git仓库和github仓库之间通过SSH加密，
 $ ssh-keygen -t rsa -C "1013222027@qq.com" 创建SSH Key
-主目录下.ssh下id_rsa和id_rsa.pub后者为公钥。复制到github的account的ssh keys下。只要每天电脑的key都添加到github，就可以在每台电脑往github推送了
+主目录下.ssh下id_rsa和id_rsa.pub后者为公钥。复制到github的account的ssh keys下。只要每台电脑的key都添加到github，就可以在每台电脑往github推送了
+
+关联远程库，使用git remote add origin git@github.com:winnnntttter/learngit.git
+如果不小心输错了，使用git remote rm origin取消远程关联。
+关联成功后$ git push -u origin master第一次推送master分支的所有内容。
+此后，每次本地提交后，只要有必要，就可以使用命令git push origin master推送最新修改
