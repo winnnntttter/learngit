@@ -37,4 +37,6 @@ $ git reflog 查看历史命令，查看commit id
 learngit是工作区，.git是版本库，版本库下包含stage（暂存区）和自动创建的第一个分支master，以及指向master的指针HEAD。
 add把文件放到暂存区，commit把暂存区的文件提交到当前分支。
 
-git diff HEAD --readme.txt查看工作区与版本库最新版本的区别
+$ git diff HEAD --readme.txt查看工作区与版本库最新版本的区别
+
+$ git checkout -- readme.txt把工作区的修改全部撤销，如果暂存区有readme.txt,则将工作区的恢复到暂存区状态，否则，恢复到版本库状态。
