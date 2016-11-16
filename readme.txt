@@ -40,3 +40,5 @@ add把文件放到暂存区，commit把暂存区的文件提交到当前分支�
 $ git diff HEAD --readme.txt查看工作区与版本库最新版本的区别
 
 $ git checkout -- readme.txt把工作区的修改全部撤销，如果暂存区有readme.txt,则将工作区的恢复到暂存区状态，否则，恢复到版本库状态。
+
+$ git reset HEAD readme.txt 把暂存区的文件放回到工作区（覆盖工作区）。然后使用$ git checkout -- readme.txt 把工作区恢复到版本库状态。
