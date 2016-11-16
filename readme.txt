@@ -42,3 +42,5 @@ $ git diff HEAD --readme.txt查看工作区与版本库最新版本的区别
 $ git checkout -- readme.txt把工作区的修改全部撤销，如果暂存区有readme.txt,则将工作区的恢复到暂存区状态，否则，恢复到版本库状态。
 
 $ git reset HEAD readme.txt 把暂存区的文件放回到工作区（覆盖工作区）。然后使用$ git checkout -- readme.txt 把工作区恢复到版本库状态。
+
+工作区新添加了文件使用add和commit添加到版本库，$rm test.txt效果等同于在文件夹中直接删除。如果要恢复，使用$git checkout -- test.txt将版本库中的替换工作区中的版本。要删除版本库中的，使用$git rm test.txt.
