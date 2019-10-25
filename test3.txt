@@ -1,0 +1,2 @@
+拉取test分支并创建本地test分支
+git clone -b test git@github.com:winnnntttter/learngit.git
