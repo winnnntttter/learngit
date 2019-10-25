@@ -22,7 +22,7 @@ git checkout -b test2(本地分支名称) 【origin/test(远程分支名称)   �
 
 git pull origin test(远程分支名称)
 
-7、修改后提交
+7、修改后提交（此时创建）
 git add -A
-git commit -m " "
-git push origin test
+git commit -m "测试分支2"
+git push origin test2（无法提交到git push origin test，此时创建并提交到远程分支test2）
