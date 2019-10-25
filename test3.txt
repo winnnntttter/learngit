@@ -1,2 +1,14 @@
 拉取test分支并创建本地test分支
 git clone -b test git@github.com:winnnntttter/learngit.git
+
+
+
+
+
+
+
+本地已经有相关的仓库代码
+当前在master分支
+git branch -r 查看远程分支
+git checkout -b test3 origin/test  创建本地分支test3并关联远程test分支
+git pull origin test 更新test到本地test3
