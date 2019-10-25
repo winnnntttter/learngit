@@ -12,3 +12,22 @@ git clone -b test git@github.com:winnnntttter/learngit.git
 git branch -r 查看远程分支
 git checkout -b test3 origin/test  创建本地分支test3并关联远程test分支
 git pull origin test 更新test到本地test3
+
+修改 add commit 后台 git push origin test并不能成功,只能git push origin test3创建test3分支
+
+
+
+当前本地在test3分支
+已有本地分支创建关联
+git branch --set-upstream-to origin/test test3
+git pull
+git push 提示： // the name of your current branch.  To push to the upstream branch
+on the remote, use
+
+    git push origin HEAD:test
+
+To push to the branch of the same name on the remote, use
+
+    git push origin HEAD  //
+
+git push origin HEAD:test成功将本地test3提交到远程test
