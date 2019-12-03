@@ -11,3 +11,7 @@ git checkout test
 
 创建并推送到远程test分支
 git push origin test
+
+git config user.name
+git config --global user.name "Your_username"
+git config --global user.email "Your_email"
