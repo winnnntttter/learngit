@@ -1,0 +1,5 @@
+git branch -r
+查看远程分支
+
+git checkout -b test
+切换到远程分支test并创建本地分支test
