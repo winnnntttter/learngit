@@ -1,0 +1,36 @@
+拉取远程分支
+
+1、新建一个空文件，文件名为hhhh
+
+2、初始化
+
+git init
+
+3、自己要与origin master建立连接（下划线为远程仓库链接）
+
+git remote add origin git@github.com:winnnntttter/learngit.git
+
+4、把远程分支拉到本地
+
+git fetch origin test（test为远程仓库的分支名）
+
+5、在本地创建分支test2并切换到该分支
+
+git checkout -b test2(本地分支名称) 【origin/test(远程分支名称)   不需要】
+
+6、把某个分支上的内容都拉取到本地
+
+git pull origin test(远程分支名称)
+
+7、修改后提交（此时创建）
+git add -A
+git commit -m "测试分支2"
+git push origin test2（无法提交到git push origin test，此时创建并提交到远程分支test2）
+
+
+
+------------
+test 修改提交后，直接
+git checkout -b test2     
+git pull origin test2
+相当于 merge 远程test2 into 本地test2 ，可直接git push origin test2
